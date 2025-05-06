@@ -1,20 +1,44 @@
-# Pomodoration - app
+# 🍅 Pomodoro Timer App (React + Firebase)
 
-This is an app which help us with be more productive. The application is based on react, redux, styled-components, firebase.
-I created this application to improve my skills: test writing, TDD, react hooks, firebase, user authentication, PWA, react patterns.
+This project is a web application implementing the popular **Pomodoro Technique**, a time management method.
 
-**Visit my app here:** [pomodoration.pl](https://pomodoration.pl/) 
+It offers user-specific features powered by Firebase, allowing users to **log in, set custom timers, track their progress, and persist their Pomodoro sessions.**
 
-## How to run on localhost?
+## ✨ Project Context: Learning React and Firebase
 
-1. `npm install`
-2. create a new project on firebase
-3. create a .env file
-4. save to .env file:  
-  NODE_PATH=src  
-  REACT_APP_API_KEY=yourApiKey  
-  REACT_APP_DATABASE_URL=yourdatabaseURL  
-  REACT_APP_PROJECT_ID=projectId  
-  REACT_APP_MESSAGING_SENDER_ID=yourMessagingId  
-  REACT_APP_APP_ID=yourAppId  
-5. `npm run start`
+This application was a core project in my journey to learn and build with **React** and **Firebase**. It served as a comprehensive exercise to understand:
+
+*   **React Fundamentals:** Building a dynamic user interface.
+*   **Firebase Integration:** Connecting a front-end application to a back-end-as-a-service.
+*   **Authentication:** Implementing secure user login using **Firebase Authentication (specifically Google Auth)**.
+*   **Database Interaction:** Storing and retrieving user data (Pomodoro sessions, active timers) using **Firebase Realtime Database / Firestore**.
+*   **State Management:** Managing application state, likely using **Redux**.
+
+It was a significant step in building full-stack capabilities by leveraging modern front-end libraries and cloud services.
+
+## 🚀 Key Features
+
+*   **User Accounts & Google Login:** Secure authentication via Firebase Auth.
+*   **Customizable Timer:** Set durations for Pomodoro sessions and breaks.
+*   **Session Tracking:** Records completed Pomodoro sessions.
+*   **Active Timer Persistence:** Aims to save the state of active timers (depending on implementation details).
+*   **Component Development with Storybook:** UI components documented and developed in isolation.
+
+## 🛠️ Technologies Used
+
+*   **React:** The core library for the user interface.
+*   **Redux:** For managing application state.
+*   **Styled Components:** For component-scoped styling.
+*   **Firebase:**
+    *   **Firebase Authentication:** For user login (Google Auth).
+    *   **Firebase Realtime Database / Firestore:** For storing user data and sessions.
+*   **Storybook:** For UI component development and documentation.
+*   **Axios:** A Promise-based HTTP client (likely used for interactions outside of pure Firebase SDK calls, if any, or within Cloud Functions).
+
+## ⚠️ Important Note on Project Status
+
+Please be aware that this project was developed **some time ago** and relies on **older versions of its dependencies** (Gatsby framework, various libraries).
+
+As a result, the code in its current state **will likely require significant work to update dependencies** and resolve compatibility issues before it can be successfully built or run.
+
+This repository is kept as a **historical record of my learning and work** at that time, demonstrating the original architecture, styling choices, and the technologies I was exploring.
